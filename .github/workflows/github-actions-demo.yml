@@ -2,6 +2,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
+  
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
@@ -16,8 +17,17 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v3
-        env:
-            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+  run_tests:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications/Xcode_15.0.x.app && /usr/bin/xcodebuild -version
+    - name: Run tests
+      run: xcodebuild test -scheme codecov-demo -project codecov-demo.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0' -enableCodeCoverage YES | xcpretty
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+     
 
