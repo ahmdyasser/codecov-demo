@@ -9,9 +9,8 @@ jobs:
     - name: Select Xcode
       run: sudo xcode-select -switch /Applications/Xcode_15.0.1.app && /usr/bin/xcodebuild -version
     - name: Run tests
-      run:  xcodebuild test -project codecov-demo.xcodeproj -scheme codecov-demo -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0.1' -resultBundlePath foo.xcresult -enableCodeCoverage YES build test
+      run:  xcodebuild -project codecov-demo.xcodeproj -scheme codecov-demo -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0.1'  build test
     - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v2
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        files: foo.xcresult
