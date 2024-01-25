@@ -10,9 +10,6 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_15.0.1.app && /usr/bin/xcodebuild -version
     - name: Run tests
       run:  xcodebuild test -project codecov-demo.xcodeproj -scheme codecov-demo -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.0.1' -resultBundlePath foo.xcresult -enableCodeCoverage YES build test
-  upload_tests:
-    runs-on: macos-13
-    steps:
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
       with:
