@@ -32,6 +32,7 @@
 		964B69522B5B342B004A3ACC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		964B69582B5B342B004A3ACC /* codecov-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codecov-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B695C2B5B342B004A3ACC /* codecov_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codecov_demoTests.swift; sourceTree = "<group>"; };
+		96B4D8522B62FE5B00DBB112 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		964B693F2B5B3429004A3ACC = {
 			isa = PBXGroup;
 			children = (
+				96B4D8522B62FE5B00DBB112 /* TestPlan.xctestplan */,
 				964B694A2B5B3429004A3ACC /* codecov-demo */,
 				964B695B2B5B342B004A3ACC /* codecov-demoTests */,
 				964B69492B5B3429004A3ACC /* Products */,
