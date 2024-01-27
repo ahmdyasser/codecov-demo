@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "83F97AFC-A8D4-4F18-AD79-9E485549080E",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:codecov-demo.xcodeproj",
+        "identifier" : "964B69572B5B342B004A3ACC",
+        "name" : "codecov-demoTests"
+      }
+    }
+  ],
+  "version" : 1
+}
