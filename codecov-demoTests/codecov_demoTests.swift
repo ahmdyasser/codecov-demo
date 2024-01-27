@@ -21,12 +21,9 @@ final class codecov_demoTests: XCTestCase {
     func testExample() throws {
         XCTAssert(true)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testSum() throws {
+        XCTAssertEqual(sum(1, 2), 3)
     }
 
 }

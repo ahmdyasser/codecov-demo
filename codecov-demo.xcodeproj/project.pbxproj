@@ -12,6 +12,7 @@
 		964B69502B5B342B004A3ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964B694F2B5B342B004A3ACC /* Assets.xcassets */; };
 		964B69532B5B342B004A3ACC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964B69522B5B342B004A3ACC /* Preview Assets.xcassets */; };
 		964B695D2B5B342B004A3ACC /* codecov_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964B695C2B5B342B004A3ACC /* codecov_demoTests.swift */; };
+		96CB962D2B653DF600F52814 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CB962C2B653DF600F52814 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		964B69582B5B342B004A3ACC /* codecov-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codecov-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964B695C2B5B342B004A3ACC /* codecov_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codecov_demoTests.swift; sourceTree = "<group>"; };
 		96B4D8522B62FE5B00DBB112 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		96CB962C2B653DF600F52814 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				964B694B2B5B3429004A3ACC /* codecov_demoApp.swift */,
+				96CB962C2B653DF600F52814 /* ViewModel.swift */,
 				964B694D2B5B3429004A3ACC /* ContentView.swift */,
 				964B694F2B5B342B004A3ACC /* Assets.xcassets */,
 				964B69512B5B342B004A3ACC /* Preview Content */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964B694E2B5B3429004A3ACC /* ContentView.swift in Sources */,
+				96CB962D2B653DF600F52814 /* ViewModel.swift in Sources */,
 				964B694C2B5B3429004A3ACC /* codecov_demoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
