@@ -1,4 +1,5 @@
 comment:                  # this is a top-level key
+  limit: 50
   layout: " diff, flags, files"
   behavior: default
   require_changes: false  # if true: only post the comment if coverage changes

@@ -26,4 +26,9 @@ final class codecov_demoTests: XCTestCase {
         XCTAssertEqual(sum(1, 2), 3)
     }
 
+    func testDiff() throws {
+        XCTAssertEqual(diff(5, 3), 2)
+
+    }
+
 }
